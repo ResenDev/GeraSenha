@@ -3,19 +3,20 @@
         list-style: none;
     }
     body {
+        background: #F2F2F2;
         font-family: "Fira Sans", sans-serif;
         display: flex;
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente */
-        height: 100vh; /* Ocupa toda a altura da tela */
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
         margin: 0;
     }
     
     main {
         display: flex;
-        flex-direction: column; /* Mantém os elementos empilhados */
-        align-items: center; /* Centraliza os itens no eixo horizontal */
-        justify-content: center; /* Centraliza no eixo vertical */
+        flex-direction: column;  
+        align-items: center;  
+        justify-content: center;  
         width: 100%;
     }
     
@@ -28,7 +29,9 @@
         
     }
     .output-container p{
+        margin: 5px 5px;
         color: #fff;
+        font-weight: 600;
     }
     .output-senha{
         width: 100%;
@@ -38,14 +41,16 @@
         border: 0.5px solid #000;
         display: flex;
         align-items: center;
-        justify-content: space-between; /* Espaça os elementos */
-        padding: 10px; /* Espaçamento interno */
-        position: relative; /* Mantém o ícone dentro do container */
+        justify-content: space-between;  
+        padding: 10px;   
+        position: relative;  
      }
     .output-senha i{
         font-size: 30px;
         display: flex;
-        
+    }
+    .output-senha i:hover{
+        cursor: pointer;
     }
     .nmr-caracter input{
         width: 60px;
@@ -62,8 +67,8 @@
     }
     .caracter-container {
         display: flex;
-        gap: 20px; /* Espaçamento entre os elementos */
-        align-items: center; /* Alinha os itens no centro verticalmente */
+        gap: 20px;  
+        align-items: center;   
         margin:40px 0;
     }
     .caracter-container span{
@@ -76,34 +81,34 @@
     }
     .tipo-caracter .form-check {
         display: flex;
-        flex-wrap: wrap; /* Quebra linha caso não caiba na tela */
-        gap: 60px; /* Espaçamento entre os itens */
+        flex-wrap: wrap; 
+        gap: 60px;  
         align-items: center;
         
     }
     .tipo-caracter,.nmr-caracter {
         display: flex;
-        flex-direction: column; /* Mantém o título acima dos inputs */
-        align-items: center; /* Centraliza no eixo horizontal */
+        flex-direction: column;   
+        align-items: center;  
     }
     .form-check-input:hover{
         cursor: pointer;
     }
     .tipo-caracter span {
-        text-align: center; /* Centraliza o texto */
-        font-weight: bold; /* Deixa o título mais destacado */
-        margin-bottom: 10px; /* Espaço entre o título e os checkboxes */
+        text-align: center;  
+        font-weight: bold;  
+        margin-bottom: 10px;  
     }
     .tipo-caracter li {
         display: flex;
         align-items: center;
-        gap: 5px; /* Espaço entre o checkbox e o texto */
+        gap: 5px; 
     }
 
     .bt-container {
         display: flex;
-        justify-content: center; /* Centraliza horizontalmente */
-        margin-top: 20px; /* Adiciona um espaçamento acima do botão */
-        width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+        justify-content: center; 
+        margin-top: 20px;  
+        width: 100%; 
     }
     

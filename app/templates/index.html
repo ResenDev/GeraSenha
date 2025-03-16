@@ -19,9 +19,9 @@
         <div class="output-container">
             <div class="output-senha">
                 <h3></h3>
-                <i class="bi bi-copy" title="Copiar senha"></i>
+                <i class="bi bi-copy" data-bs-toggle="tooltip" title="Copiar senha"></i>
             </div>
-            <p>Senha Fraca</p>
+            <p>Senha Forte</p>
         </div>
         <form action="" method="post">
             <div class="caracter-container">
@@ -61,7 +61,12 @@
         </form>
         </main>
     </body>
-<style>
-    
-</style>
+<script>
+    // Inicializar todos os tooltips na página
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+  new bootstrap.Tooltip(tooltipTriggerEl);
+});
+
+</script>
 </html>
