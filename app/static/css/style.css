@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+        list-style: none;
+    }
+    body {
+        font-family: "Fira Sans", sans-serif;
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        height: 100vh; /* Ocupa toda a altura da tela */
+        margin: 0;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column; /* Mantém os elementos empilhados */
+        align-items: center; /* Centraliza os itens no eixo horizontal */
+        justify-content: center; /* Centraliza no eixo vertical */
+        width: 100%;
+    }
+    
+    .output-container{
+        width: 70%;
+        background: #17BD14;
+        height: 120px;
+        border-radius: 5px;
+        
+        
+    }
+    .output-container p{
+        color: #fff;
+    }
+    .output-senha{
+        width: 100%;
+        height: 85px;
+        background: #fff;
+        border-radius: 5px;
+        border: 0.5px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Espaça os elementos */
+        padding: 10px; /* Espaçamento interno */
+        position: relative; /* Mantém o ícone dentro do container */
+     }
+    .output-senha i{
+        font-size: 30px;
+        display: flex;
+        
+    }
+    .nmr-caracter input{
+        width: 60px;
+     }
+    button{
+        border-radius:10px ;
+        background: #25ACDF;
+        border: none;
+        color: #fff;
+        font-size:24px ;
+        height: 70px;
+        width: 220px;
+        font-weight: 600;
+    }
+    .caracter-container {
+        display: flex;
+        gap: 20px; /* Espaçamento entre os elementos */
+        align-items: center; /* Alinha os itens no centro verticalmente */
+        margin:40px 0;
+    }
+    .caracter-container span{
+        font-weight: 600;
+    }
+    
+    .nmr-caracter{
+        display: flex;
+        flex-direction: column;
+    }
+    .tipo-caracter .form-check {
+        display: flex;
+        flex-wrap: wrap; /* Quebra linha caso não caiba na tela */
+        gap: 60px; /* Espaçamento entre os itens */
+        align-items: center;
+        
+    }
+    .tipo-caracter,.nmr-caracter {
+        display: flex;
+        flex-direction: column; /* Mantém o título acima dos inputs */
+        align-items: center; /* Centraliza no eixo horizontal */
+    }
+    .form-check-input:hover{
+        cursor: pointer;
+    }
+    .tipo-caracter span {
+        text-align: center; /* Centraliza o texto */
+        font-weight: bold; /* Deixa o título mais destacado */
+        margin-bottom: 10px; /* Espaço entre o título e os checkboxes */
+    }
+    .tipo-caracter li {
+        display: flex;
+        align-items: center;
+        gap: 5px; /* Espaço entre o checkbox e o texto */
+    }
+
+    .bt-container {
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        margin-top: 20px; /* Adiciona um espaçamento acima do botão */
+        width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+    }
+    
