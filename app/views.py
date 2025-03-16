@@ -6,3 +6,5 @@ def home(request):
             request,
             'index.html'
         )
+def gerar_senha(request):
+    pass
