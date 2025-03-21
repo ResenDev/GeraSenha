@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="padlock.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <title>Gerador de Senha</title>
+</head>
+<body>
+    <main>
+        <div class="cabecalho  text-center">
+            <h3>Gerador de Senhas Aleatórias</h3>
+            <p>Gere senhas mais seguras.</p>
+        </div>
+        <div class="output-container">
+            <div class="output-senha">
+                <h3 class="senha">^EP+xV[%C+1</h3> 
+                <button class="btn-copy" ><i class="bi bi-copy"  data-bs-toggle="tooltip" data-bs-title="Copiar senha" data-bs-placement="top"></i></button>
+            </div>
+            <p>Senha Forte</p>
+        </div>
+        <form action="" method="post">
+            <div class="caracter-container">
+                <div class="nmr-caracter">
+                    <span>Número de caracteres</span>
+                    <input class="text-center" type="number" name="qtd_caracteres" id="qtd_caracteres" value="12" min="4" max="30">
+                </div>
+                <div class="tipo-caracter">
+                    <span>Tipo de caracteres</span>
+                        <div class="form-check form-switch">
+                            <li>
+                                <input class="form-check-input" type="checkbox" role="switch" name="maiusculas" checked>
+                                <label class="form-check-label" for="flexSwitchCheckDisabled">Maiúsculas</label>
+
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" role="switch" name="minusculas" checked>
+                                <label class="form-check-label" for="flexSwitchCheckDisabled">Minúsculas</label>
+
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" role="switch" name="numeros" checked>
+                                <label class="form-check-label" for="flexSwitchCheckDisabled">Números</label>
+
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" role="switch" name="simbolos" checked>
+                                <label class="form-check-label" for="flexSwitchCheckDisabled">Símbolos</label>
+
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="bt-container">
+                    <button type="submit" class="enviar">Gerar Senha <i class="bi bi-arrow-repeat" style="font-size:28px;"></i></button>   
+                </div>   
+        </form>
+        <footer class="footer mt-auto py-3">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <h5>Sobre</h5>
+                        <p>Feito por <span>ResenDev</span> 🚀</p>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" style="width: 5%;" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"style="width: 5%;" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"style="width: 5%;" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"style="width: 5%;" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"style="width: 5%;" />
+                                                        
+                    </div>
+                    <div class="col-md-4 text-center" id="links-space">
+                        <h5>Links de Contato</h5>
+                        <ul class="list-group list-group-horizontal">
+                            <li><a href="https://www.linkedin.com/in/rafael--resende/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i></a></li>
+                            <li><a href="https://github.com/ResenDev" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></a></li>
+                            <li><a href="https://resendesworkspace.slack.com/team/U070CLVMFU4" target="_blank"><i class="fa-brands fa-slack fa-xl" style="color: #ffffff;"></i></a></li>
+                            <li><a href="mailto:ressendev@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-xl"style="color: #ffffff;"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h5>Meu Portfólio</h5>
+                        <p><a href="https://resendev.pages.dev/"target="_blank"style="color:#fff;">resendev.pages.dev</a></p>
+                        
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <p>© 2025 ResenDev. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+        </main>
+    </body>
+    <script src="../copiar_senha.js"></script>
+<script>
+    <!--Inicializador do "ToolTip" do bootstrap-->
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    
+</script>
+</html>

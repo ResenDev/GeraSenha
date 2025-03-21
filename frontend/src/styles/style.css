@@ -25,8 +25,6 @@
         background: #17BD14;
         height: 120px;
         border-radius: 5px;
-        
-        
     }
     .output-container p{
         margin: 5px 5px;
@@ -55,16 +53,7 @@
     .nmr-caracter input{
         width: 60px;
      }
-    button{
-        border-radius:10px ;
-        background: #25ACDF;
-        border: none;
-        color: #fff;
-        font-size:24px ;
-        height: 70px;
-        width: 220px;
-        font-weight: 600;
-    }
+    
     .caracter-container {
         display: flex;
         gap: 20px;  
@@ -104,11 +93,61 @@
         align-items: center;
         gap: 5px; 
     }
-
+    .enviar{
+        border-radius:10px ;
+        background: #199BCD;
+        border: none;
+        color: #fff;
+        font-size:24px ;
+        height: 70px;
+        width: 220px;
+        font-weight: 600;
+    }
+    .enviar:hover{
+        background: #31BEF2;
+        transition: 0.5s ease-in-out;
+        transform: scale(1.03);
+    }
     .bt-container {
         display: flex;
         justify-content: center; 
         margin-top: 20px;  
         width: 100%; 
     }
+    .footer{
+        background:#0077A7;
+        text-align:center;
+        left: 0;
+        bottom: 0;
+        padding: 10px 0;
+        width: 100%;
+        position: fixed;
+    }
+    .footer p,h5,li{
+        color: #fff;
+    }
+    .footer ul{
+        justify-content: center;
+          
+    }
+    .footer li{
+        padding: 5px;
+    }
+    *{
+        list-style: none;
+    }
+    .container{
+        margin-top:20px;
+    }
+    .row span{
+        font-weight: 800;
+    }
+    label{
+        color: #000;
+    }
+    .btn-copy{
+        background: none;
+        border: none;
+    }
+    
     
